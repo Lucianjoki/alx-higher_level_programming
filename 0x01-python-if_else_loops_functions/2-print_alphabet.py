@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-"""Print the alphabet in lowercase not followed by a new line."""
+"""Print the alphabet in lowercase, not followed by a new line."""
 for letters in range(97, 123):
-    print(chr(letter).format(),end="")
+    print(chr(letters), end="")
