@@ -1,2 +1,7 @@
 #!/usr/bin/python3
-def roman_to_int(roman_string):
+def complex_delete(my_dict, value):
+    tmp = my_dict.copy()
+    for z, v in tmp.items():
+        if value == v:
+            my_dict.pop(z)
+    return my_dict
