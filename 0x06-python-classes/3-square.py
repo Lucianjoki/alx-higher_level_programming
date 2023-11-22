@@ -3,14 +3,19 @@
 
 
 class Square:
-    """initializes a new square.
-    """
-    if not isinstance(size, int):
-        raise TypeError("size must be an integer")
-    elif size < 0:
-        raise ValueError("Size must be >= 0")
-    self.__size = size
+    """Represents a square."""
 
-    def area(self):
-        """Return the current area of the square."""
-        return(self.__size*self.__size)
+    def __init__(self, size=0):
+        """initializes a new square.
+    Args:
+        size(int): size of new square.
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("Size must be >= 0")
+        self.__size = size
+
+        def area(self):
+            """Return the current area of the square."""
+            return(self.__size*self.__size)
