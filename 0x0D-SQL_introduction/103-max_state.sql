@@ -1,4 +1,6 @@
-SELECT state, MAX(value) as max_temp FROM temperatures
-	GROUP BY state
-	ORDER BY state
-	limit 3;
+-- displays the max temperature of each state (ordered by State name).
+-- MAx() function
+SELECT state, MAX(VALUE) as max_temp
+FROM temperatures 
+GROUP BY STATE 
+ORDER BY 1;
